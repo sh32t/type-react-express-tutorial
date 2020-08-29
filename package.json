@@ -1,0 +1,29 @@
+{
+  "name": "type-react-express-tutorial",
+  "version": "1.0.0",
+  "description": "```ps1\r npm init -y\r ```\r ## ライブラリのインストール\r ```ps1\r npm install typescript\r npm install react @types/react\r npm install react-dom @types/react-dom\r npm install express @types/express\r npm install webpack\r npm install webpack-cli\r npm install path\r ```\r ### tsconfig.jsonの作成\r ```ps1\r npx tsc --init\r ```\r ### webpack.config.jsファイルの作成\r #### プロジェクトフォルダ直下に`dist`フォルダを作成する。\r #### ※参考：[Webpackのチュートリアル](https://github.com/sh32t/webpack-tutorial), [最新版TypeScript+webpack 4の環境構築まとめ(React, Vue.js, Three.jsのサンプル付き)](https://ics.media/entry/16329/)\r ```js\r const path = require('path');",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "ts-node src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/app-root-path": "^1.2.4",
+    "@types/express": "^4.17.7",
+    "@types/react": "^16.9.48",
+    "@types/react-dom": "^16.9.8",
+    "app-root-path": "^3.0.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "ts-loader": "^8.0.3",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
