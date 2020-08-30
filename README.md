@@ -75,7 +75,7 @@ const app:express.Express = express();
 app.use(express.static(path.join(root.path, '/public')));
 
 app.get('/hello', function (req:express.Request, res:express.Response) {
-    res.sendFile(path.join(root.path, 'index.html'));
+    res.sendFile(path.join(root.path, 'public', 'index.html'));
 });
 
 app.listen(8080, function () {  
