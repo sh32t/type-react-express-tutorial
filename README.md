@@ -99,16 +99,10 @@ ReactDOM.render(<Hello />, document.getElementById("root"));
 ```
 #### `public`フォルダ直下に`index.html`を作成する。
 ```tsx
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-
-const Hello: React.FunctionComponent = function() {
-  return (
-    <div>Hello World</div>
-  );
-}
-
-ReactDOM.render(<Hello />, document.getElementById("root"));
+<body>
+    <div id="root"></div>
+    <script src="./js/app-bundle.js"></script>    
+</body>
 ```
 ## package.jsonの編集
 ```json
